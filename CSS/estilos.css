@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+}
+
+#titulo {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
+
+.video {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.items a {
+    padding: 10px;
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
+
+.items a:hover {
+    background: #FEFEFE;
+    color: #000000;
+}
+
+.pQuien {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #fff;
+    text-align: justify;
+    font-family: 'Cinzel', serif;
+}
+
+footer {
+    margin-top: 100px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background-color: #F5F5DC;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 15px;
+}
+
+a span {
+    color: #000000;
+    font-size: 30px;
+}
+
+#redes {
+    color: #000000;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.cursive {
+    font-size: 15px;
+    font-style: italic;
+    color: #000000;
+}

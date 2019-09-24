@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="../CSS/flexboxgrid.min.css">
+    <link rel="stylesheet" href="../CSS/Formulario.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fonts/iconos.css">
+</head>
+
+<body>
+    <header class="row">
+        <div class="col-xs-12 center-xs">
+            <h2 id="titulo">Bienvenido al formulario de inscripcion.</h2>
+        </div>
+    </header>
+    <hr>
+    <div class="row center-xs">
+        <div class="col-xs">
+            <form name="formulario" action="index.html" method="get">
+                <label for="name" class="colorLetras">Nombre</label><br>
+                <input type="text" id="name" name="name" placeholder="Introduce tu Nombre"><br>
+
+                <label for="correo" class="colorLetras">Correo Electronico</label><br>
+                <input type="email" id="correo" name="correo" placeholder="Introduce tu Email"><br>
+
+                <label for="date" class="colorLetras">Fecha de Nacimiento</label><br>
+                <input type="date" name="date" id="date"/><br>
+
+                <label for="usuario" class="colorLetras">Nombre de Usuario</label><br>
+                <input type="text" id="usuario" name="usuario" placeholder="Introduce tu Nombre de Usuario"><br>
+
+                <label for="pass1" class="colorLetras">Contraseña</label><br>
+                <input type="password" id="pass1" name="pass1" minlength="8" placeholder="Introduce tu Contraseña"><br>
+
+                <label for="pass2" class="colorLetras">Repita la Contraseña</label><br>
+                <input type="password" id="pass2" name="pass2" minlength="8" placeholder="Repita la Contraseña"><br><br>
+
+                <input type="submit" id="boton" class="colorLetras" name="boton" value="Registrar">
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <footer class="col-xs-12 center-xs">
+            <p id="redes">Redes Sociales</p>
+            <br>
+            <div id="decoracion">
+                <a href="https://www.facebook.com/ShadowProjectOficial/" target="_blank"><span class="icon-facebook"></span></a>
+                <a href="https://www.instagram.com/sh_path_of_redemption/" target="_blank"><span class="icon-instagram"></span></a>
+                <a href="https://www.youtube.com/channel/UCC3KLun16zLqYWjDR76q-7w" target="_blank"><span class="icon-youtube"></span></a>
+            </div>
+            <hr>
+            <span class="col-xs-12 cursive">Contactenos a [sp.pathofredemption@gmail.com]</span>
+            <br>
+            <br>
+        </footer>
+    </div>
+    <script src="../JS/scriptForm.js"></script>
+</body>
+
+</html>

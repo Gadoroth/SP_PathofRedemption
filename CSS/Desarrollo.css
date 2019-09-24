@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+}
+
+#titulo {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
+
+.items a {
+    padding: 10px;
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
+
+.items a:hover {
+    background: #FEFEFE;
+    color: #000000;
+}
+
+.tituloCarrucel {
+    margin-top: 50px;
+    color: #FEFEFE;
+    font-family: 'Cinzel', serif;
+}
+
+h3 a {
+    color: #FEFEFE;
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+}
+
+h3 a:hover {
+    color: #000000;
+    background: #FEFEFE;
+}
+
+
+/*carrucel 1*/
+
+.galeria {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria li {
+    margin: 5px;
+}
+
+.galeria img {
+    width: 150px;
+    height: 100px;
+}
+
+
+/*Estilos del modal*/
+
+.modal {
+    display: none;
+}
+
+.modal:target {
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    ;
+    margin: 15px 0;
+}
+
+.imagen {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.imagen img {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+}
+
+.cerrar {
+    display: block;
+    background: #000000;
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+.cerrar:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+
+/*FOOTER // FIN DE PAGINA*/
+
+footer {
+    margin-top: 100px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background-color: #F5F5DC;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 15px;
+}
+
+a span {
+    color: #000000;
+    font-size: 30px;
+}
+
+#redes {
+    color: #000000;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.cursive {
+    font-size: 15px;
+    font-style: italic;
+    color: #000000;
+}
