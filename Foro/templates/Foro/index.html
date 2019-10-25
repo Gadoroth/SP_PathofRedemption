@@ -1,20 +1,23 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shadown Project</title>
-    <link rel="stylesheet" href="../CSS/flexboxgrid.min.css">
-    <link rel="stylesheet" href="../fonts/iconos.css">
-    <link rel="stylesheet" href="../CSS/estilos.css">
+
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/flexboxgrid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/iconos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 </head>
 
 <body>
-    
+
     <header>
         <div class="container">
             <div class="row center-xs">
@@ -23,7 +26,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="items">
             <div class="container">
                 <div class="row center-xs">
@@ -32,6 +35,7 @@
                             <a href="Download.html">Descargar</a>
                             <a href="Sesion.html">Iniciar Sesión</a>
                             <a href="Registro.html">Registrarse</a>
+                            <a href="foro.html">Foro</a>
                         </nav>
                     </div>
                 </div>
