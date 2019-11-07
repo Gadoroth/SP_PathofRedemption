@@ -8,7 +8,7 @@ from django.shortcuts import redirect
 # Create your views here.
 def foro(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'Foro/foro.html', {'posts': posts })
+    return render(request, 'Foro/index.html', {'posts': posts })
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
