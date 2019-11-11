@@ -6,6 +6,27 @@ from .forms import PostForm
 from django.shortcuts import redirect
 
 # Create your views here.
+def index(request):
+    return render(request, 'Foro/index.html', {})
+
+def Registro(request):
+    return render(request, 'Foro/Registro.html', {}) 
+
+def Download(request):
+    return render(request, 'Foro/Download.html', {}) 
+
+def Sesion(request):
+    return render(request, 'Foro/Sesion.html', {}) 
+
+def Devs(request):
+    return render(request, 'Foro/Devs.html', {}) 
+
+def Juego(request):
+    return render(request, 'Foro/Juego.html', {})
+
+def Desarrollo(request):
+    return render(request, 'Foro/Desarrollo.html', {})  
+
 def foro(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'Foro/foro.html', {'posts': posts })

@@ -1,6 +1,5 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-
 <html lang="en">
 
 
@@ -9,13 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shadown Project</title>
-
-    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
     <link rel="stylesheet" href="{% static 'css/flexboxgrid.min.css' %}">
     <link rel="stylesheet" href="{% static 'fonts/iconos.css' %}">
-    
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -34,10 +32,10 @@
                 <div class="row center-xs">
                     <div class="col-xs">
                         <nav>
-                            <a href="Download.html">Descargar</a>
-                            <a href="Sesion.html">Iniciar Sesión</a>
-                            <a href="Registro.html">Registrarse</a>
-                            <a href="foro.html">Foro</a>
+                            <a href="{% url 'Download' %}">Descargar</a>
+                            <a href="{% url 'Sesion' %}">Iniciar Sesión</a>
+                            <a href="{% url 'Registro' %}">Registrarse</a>
+                            <a href="{% url 'foro' %}">Foro</a>
                         </nav>
                     </div>
                 </div>
@@ -54,19 +52,19 @@
     <div class="container">
         <div class="row center-xs">
             <section class="col-xs-12 col-sm-6 col-md-4 items">
-                <a href="Devs.html">
+                <a href="{% url 'Devs' %}">
                     <h4 class="colorLetras">¿Quienes Somos?</h4>
                 </a>
                 <p class="pQuien">Descubre todo lo relacionado con el Equipo de Desarrollo, detrás de Shadow Project.</p>
             </section>
             <section class="col-xs-12 col-sm-6 col-md-4 items">
-                <a href="Juego.html">
+                <a href="{% url 'Juego' %}">
                     <h4>El Juego</h4>
                 </a>
                 <p class="pQuien">Para redimir el mundo, es necesario conocer la Oscuridad que ha condenado a las tierras de Eridus al cataclismo. Incursiona en la Historia y sus Personajes.</p>
             </section>
             <section class="col-xs-12 col-sm-6 col-md-4 items">
-                <a href="Desarrollo.html">
+                <a href="{% url 'Desarrollo' %}">
                     <h4>Desarrollo del Proyecto</h4>
                 </a>
                 <p class="pQuien">Da un vistazo breve al motor grafico usado para el desarrollo, así como a nuestra sección de arte de Shadow Project.</p>
