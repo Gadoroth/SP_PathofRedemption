@@ -40,163 +40,73 @@
             </div>
         </div>
     </header>
+
     <div class="container">
         <div class="row center-xs">
             <div class="col-xs tituloCarrucel">
-                <h3>Desarollo del Proyecto</h3>
+                <h3>Desarollo Conceptual de Shadow Project.</h3>
             </div>
         </div>
     </div>
+
     <!--CARRUSEL 1 - DESARROLLO PROYECTO-->
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 centrar">
-                <h3>Desarrollo del Proyecto</h3>
-            </div>
-            <div class="col-xs-12">
-                <p>Galeria de Imagenes - Concepto de Shadow Project: The Path of Redemption</p>
-                <ul class="galeria">
+            <div class="slider col-xs-12 centrar">
+                <ul class="slider">
                     <li>
-                        <a href="#img1"><img src="{% static 'IMG/MainIMG/MainLogo.jpg' %}" alt="Logo Principal"></a>
+                        <a href=""><img src="{% static 'IMG/MainIMG/MainLogo.jpg' %}" alt="Logo Principal"></a>
                     </li>
                     <li>
-                        <a href="#img2"><img src="{% static '/IMG/IMG_Cascade/PuppeteerViva.jpeg' %}" alt="Puppeteer Viva"></a>
+                        <a href=""><img src="{% static '/IMG/IMG_Cascade/PuppeteerViva.jpeg' %}" alt="Puppeteer Viva"></a>
                     </li>
                     <li>
-                        <a href="#img3"><img src="{% static '/IMG/IMG_Cascade/RetratoFamilia.jpeg' %}" alt="Retrato Familiar - Puppeteer"></a>
+                        <a href=""><img src="{% static '/IMG/IMG_Cascade/RetratoFamilia.jpeg' %}" alt="Retrato Familiar - Puppeteer"></a>
                     </li>
                     <li>
-                        <a href="#img4"><img src="{% static '/IMG/Concept/ConcepPyro.jpg' %}" alt="Concepto: Pyromancer"></a>
+                        <a href=""><img src="{% static '/IMG/Concept/ConcepPyro.jpg' %}" alt="Concepto: Pyromancer"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="{% static '/IMG/Concept/ConcepPuppet.jpg' %}" alt="Concepto: Puppeteer"></a>
                     </li>
                 </ul>
-
-                <div class="modal" id="img1">
-                    <h3>Logo Principal</h3>
-                    <div class="imagen">
-                        <a href="#img4">&#60;</a>
-                        <a href="#img2"><img src="{% static '/IMG/MainIMG/MainLogo.jpg' %}" alt="Logo Principal"></a>
-                        <a href="#img2">></a>
-                    </div>
-                    <a class="cerrar" href="">X</a>
-                </div>
-
-                <div class="modal" id="img2">
-                    <h3>Puppeteer Viva</h3>
-                    <div class="imagen">
-                        <a href="#img1">&#60;</a>
-                        <a href="#img3"><img src="{% static '/IMG/IMG_Cascade/PuppeteerViva.jpeg' %}" alt="Puppeter Viva"></a>
-                        <a href="#img3">></a>
-                    </div>
-                    <a class="cerrar" href="">X</a>
-                </div>
-
-                <div class="modal" id="img3">
-                    <h3>Retrato Familiar - Puppeteer</h3>
-                    <div class="imagen">
-                        <a href="#img2">&#60;</a>
-                        <a href="#img4"><img src="{% static '/IMG/IMG_Cascade/RetratoFamilia.jpeg' %}" alt="Retrato Familiar - Puppeteer"></a>
-                        <a href="#img4">></a>
-                    </div>
-                    <a class="cerrar" href="">X</a>
-                </div>
-
-                <div class="modal" id="img4">
-                    <h3>Concepto: Pyromancer</h3>
-                    <div class="imagen">
-                        <a href="#img3">&#60;</a>
-                        <a href="#img1"><img src="{% static '/IMG/Concept/ConcepPyro.jpg' %}" alt="Concepto: Pyromancer"></a>
-                        <a href="#img1">></a>
-                    </div>
-                    <a class="cerrar" href="">X</a>
-                </div>
-            </div>
-        </div>
-        <!---->
-        <div class="container">
-            <div class="row center-xs">
-                <div class="col-xs tituloCarrucel">
-                    <h3>Presentación de Shadow Project - Liceo Politécnico Marga Marga, Viña del Mar</h3>
-                </div>
-            </div>
-        </div>
-        <!--CARRUSEL 2 - LICEO-->
-        <div class="container">
-            <div class="row center-xs">
-                <div class="col-xs">
-                    <div class="col-xs-12">
-                        <p>Presentación de Shadow Project - Liceo Politécnico Marga Marga, Viña del Mar</p>
-                        <ul class="galeria">
-                            <li>
-                                <a href="#img5"><img src="{% static '/IMG/liceo/game0.jpg' %}" alt="game0"></a>
-                            </li>
-                            <li>
-                                <a href="#img6"><img src="{% static '/IMG/liceo/game1.jpg' %}" alt="gam1"></a>
-                            </li>
-                            <li>
-                                <a href="#img7"><img src="{% static '/IMG/liceo/game2.jpg' %}" alt="game2"></a>
-                            </li>
-                            <li>
-                                <a href="#img8"><img src="{% static '/IMG/liceo/game3.jpg' %}" alt="game3"></a>
-                            </li>
-                            <li>
-                                <a href="#img9"><img src="{% static '/IMG/liceo/game4.jpg' %}" alt="game4"></a>
-                            </li>
-                        </ul>
-
-                        <div class="modal" id="img5">
-                            <h3>Presentación</h3>
-                            <div class="imagen">
-                                <a href="#img9">&#60;</a>
-                                <a href="#img6"><img src="{% static '/IMG/liceo/game0.jpg' %}" alt="game0"></a>
-                                <a href="#img6">></a>
-                            </div>
-                            <a class="cerrar" href="">X</a>
-                        </div>
-
-                        <div class="modal" id="img6">
-                            <h3>Gameplay 1</h3>
-                            <div class="imagen">
-                                <a href="#img5">&#60;</a>
-                                <a href="#img7"><img src="{% static '/IMG/liceo/game1.jpg' %}" alt="game1"></a>
-                                <a href="#img7">></a>
-                            </div>
-                            <a class="cerrar" href="">X</a>
-                        </div>
-
-                        <div class="modal" id="img7">
-                            <h3>Gameplay 2</h3>
-                            <div class="imagen">
-                                <a href="#img6">&#60;</a>
-                                <a href="#img8"><img src="{% static '/IMG/liceo/game2.jpg' %}" alt="game2"></a>
-                                <a href="#img8">></a>
-                            </div>
-                            <a class="cerrar" href="">X</a>
-                        </div>
-
-                        <div class="modal" id="img8">
-                            <h3>Gameplay 3</h3>
-                            <div class="imagen">
-                                <a href="#img7">&#60;</a>
-                                <a href="#img9"><img src="{% static '/IMG/liceo/game3.jpg' %}" alt="game3"></a>
-                                <a href="#img9">></a>
-                            </div>
-                            <a class="cerrar" href="">X</a>
-                        </div>
-                        <div class="modal" id="img9">
-                            <h3>Gameplay 4</h3>
-                            <div class="imagen">
-                                <a href="#img8">&#60;</a>
-                                <a href="#img5"><img src="{% static '/IMG/liceo/game4.jpg' %}" alt="game4"></a>
-                                <a href="#img5">></a>
-                            </div>
-                            <a class="cerrar" href="">X</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
+
     <!---->
+    <div class="container">
+        <div class="row center-xs tituloCarrucel">
+            <h3>Presentación de Shadow Project - Liceo Politécnico Marga Marga, Viña del Mar.</h3>
+        </div>
+    </div>
+    </div>
+
+    <!--CARRUSEL 2 - LICEO-->
+    <div class="row">
+        <div class="slider col-xs-12">
+            <ul class="slider">
+                <li>
+                    <a href=""><img src="{% static '\IMG\liceo\game0.jpg' %}" alt="Logo Principal"></a>
+                </li>
+                <li>
+                    <a href=""><img src="{% static '\IMG\liceo\game1.jpg' %}" alt="Puppeteer Viva"></a>
+                </li>
+                <li>
+                    <a href=""><img src="{% static '\IMG\liceo\game2.jpg' %}" alt="Retrato Familiar - Puppeteer"></a>
+                </li>
+                <li>
+                    <a href=""><img src="{% static '\IMG\liceo\game3.jpg' %}" alt="Concepto: Pyromancer"></a>
+                </li>
+                <li>
+                    <a href=""><img src="{% static '\IMG\liceo\game4.jpg' %}" alt="Concepto: Pyromancer"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!---->
+
     <br>
     <br>
     <div class="container">
@@ -206,6 +116,7 @@
             </div>
         </div>
     </div>
+
     <!-- FOOTER - REDES SOCIALES -->
     <div class="row">
         <footer class="col-xs-12 center-xs">
@@ -222,7 +133,7 @@
             <br>
         </footer>
     </div>
-    <script src="../JS/carrucel.js"></script>
+
 </body>
 
 </html>
