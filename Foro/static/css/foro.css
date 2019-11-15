@@ -15,6 +15,10 @@
     font-size: 20px;
 }
 
+.icono3 {
+    font-size: 25px;
+}
+
 body {
     background: #000000;
 }
@@ -45,10 +49,19 @@ p {
     color: #fff;
 }
 
-.post {
-    color: antiquewhite;
+.date {
+    color: #FEFEFE;
     font-family: 'Cinzel', serif;
-    font-weight: bold;
+}
+
+.titulo_post {
+    color: #FEFEFE;
+    font-family: 'Cinzel', serif;
+    text-decoration: underline;
+}
+
+.cont_post {
+    font-size: 30px;
 }
 
 #titulo {

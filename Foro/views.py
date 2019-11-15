@@ -4,6 +4,7 @@ from .models import Post
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
+from django.db.models import Q
 
 # Create your views here.
 def index(request):
@@ -28,7 +29,14 @@ def Desarrollo(request):
     return render(request, 'Foro/Desarrollo.html', {})  
 
 def foro(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    queryset = request.GET.get("buscar")  
+    if queryset:
+        posts = Post.objects.filter(
+            Q(title__icontains = queryset) |
+            Q(text__icontains = queryset)
+        ).distinct()
+    else:
+        posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date').reverse()
     return render(request, 'Foro/foro.html', {'posts': posts })
 
 def post_detail(request, pk):
