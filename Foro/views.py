@@ -39,6 +39,7 @@ def foro(request):
         posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date').reverse()
     return render(request, 'Foro/foro.html', {'posts': posts })
 
+
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'Foro/post_detail.html', {'post': post})
@@ -57,16 +58,19 @@ def post_new(request):
     return render(request, 'Foro/post_edit.html', {'form': form})
 
 def post_edit(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    if request.method == "POST":
-        form = PostForm(request.POST, instance=post)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.published_date = timezone.now()
-            post.save()
-            return redirect('post_detail', pk=post.pk)
+    user = request.user
+    if user.has_perm('foro.user'):
+        post = get_object_or_404(Post, pk=pk)
+        if request.method == "POST":
+            form = PostForm(request.POST, instance=post)
+            if form.is_valid():
+                post = form.save(commit=False)
+                post.author = request.user
+                post.published_date = timezone.now()
+                post.save()
+                return redirect('post_detail', pk=post.pk)
+        else:
+            form = PostForm(instance=post)
+        return render(request, 'Foro/post_edit.html', {'form': form})
     else:
-        form = PostForm(instance=post)
-    return render(request, 'Foro/post_edit.html', {'form': form})
-
+        return render(request, 'Foro/foro.html')

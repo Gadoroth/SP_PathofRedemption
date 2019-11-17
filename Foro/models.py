@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.utils.translation import ugettext as _
 
 
 class Post(models.Model):
@@ -17,3 +18,9 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        permissions = (
+            ('user',_('Es Admin')),
+            ('usuraio',_('Es Usuraio'))
+        )
