@@ -18,7 +18,7 @@ def Download(request):
 
 def Sesion(request):
     return render(request, 'Foro/Sesion.html', {}) 
-
+    
 def Devs(request):
     return render(request, 'Foro/Devs.html', {}) 
 
@@ -27,6 +27,9 @@ def Juego(request):
 
 def Desarrollo(request):
     return render(request, 'Foro/Desarrollo.html', {})  
+
+def permiso(request):
+    return render(request, 'Foro/permiso.html', {})  
 
 def foro(request):
     queryset = request.GET.get("buscar")  
@@ -59,7 +62,7 @@ def post_new(request):
 
 def post_edit(request, pk):
     user = request.user
-    if user.has_perm('foro.user'):
+    if user.has_perm('Foro.user'):
         post = get_object_or_404(Post, pk=pk)
         if request.method == "POST":
             form = PostForm(request.POST, instance=post)
@@ -73,4 +76,4 @@ def post_edit(request, pk):
             form = PostForm(instance=post)
         return render(request, 'Foro/post_edit.html', {'form': form})
     else:
-        return render(request, 'Foro/foro.html')
+        return render(request, 'Foro/permiso.html')

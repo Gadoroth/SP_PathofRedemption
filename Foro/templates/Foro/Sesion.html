@@ -6,11 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>El Juego</title>
+    <title>Inicio se Sesión</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'fonts/iconos.css' %}">
 </head>
 
 <body>
     <form method="POST">
+        {% csrf_token %}
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <div class="form-group">

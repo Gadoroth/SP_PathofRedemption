@@ -17,76 +17,75 @@
 </head>
 
 <body>
-    <<<<<<< HEAD:HTML/index.html <!-- mimamamemima -->
-        ======= >>>>>>> bff050ec9b145e6c31c2315c6aeba358309889b1:Foro/templates/Foro/index.html
-        <header>
+
+    <header>
+        <div class="container">
+            <div class="row center-xs">
+                <div class="col-xs">
+                    <h1 id="titulo">Shadow Project: The Path of Redemption</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="items">
             <div class="container">
                 <div class="row center-xs">
                     <div class="col-xs">
-                        <h1 id="titulo">Shadow Project: The Path of Redemption</h1>
+                        <nav>
+                            <a href="{% url 'Download' %}">Descargar</a>
+                            <a href="{% url 'Sesion' %}">Iniciar Sesión</a>
+                            <a href="{% url 'Registro' %}">Registrarse</a>
+                            <a href="{% url 'foro' %}">Foro</a>
+                        </nav>
                     </div>
                 </div>
             </div>
-            <<<<<<< HEAD:HTML/index.html=======>>>>>>> bff050ec9b145e6c31c2315c6aeba358309889b1:Foro/templates/Foro/index.html
-                <div class="items">
-                    <div class="container">
-                        <div class="row center-xs">
-                            <div class="col-xs">
-                                <nav>
-                                    <a href="{% url 'Download' %}">Descargar</a>
-                                    <a href="{% url 'Sesion' %}">Iniciar Sesión</a>
-                                    <a href="{% url 'Registro' %}">Registrarse</a>
-                                    <a href="{% url 'foro' %}">Foro</a>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </header>
-        <div class="container">
-            <div class="row center-xs">
-                <div class="col-xs-12 video">
-                    <iframe src="https://www.youtube.com/embed/J0rDYW7a_J4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row center-xs">
+            <div class="col-xs-12 video">
+                <iframe src="https://www.youtube.com/embed/J0rDYW7a_J4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-        <div class="container">
-            <div class="row center-xs">
-                <section class="col-xs-12 col-sm-6 col-md-4 items">
-                    <a href="{% url 'Devs' %}">
-                        <h4 class="colorLetras">¿Quienes Somos?</h4>
-                    </a>
-                    <p class="pQuien">Descubre todo lo relacionado con el Equipo de Desarrollo, detrás de Shadow Project.</p>
-                </section>
-                <section class="col-xs-12 col-sm-6 col-md-4 items">
-                    <a href="{% url 'Juego' %}">
-                        <h4>El Juego</h4>
-                    </a>
-                    <p class="pQuien">Para redimir el mundo, es necesario conocer la Oscuridad que ha condenado a las tierras de Eridus al cataclismo. Incursiona en la Historia y sus Personajes.</p>
-                </section>
-                <section class="col-xs-12 col-sm-6 col-md-4 items">
-                    <a href="{% url 'Desarrollo' %}">
-                        <h4>Desarrollo del Proyecto</h4>
-                    </a>
-                    <p class="pQuien">Da un vistazo breve al motor grafico usado para el desarrollo, así como a nuestra sección de arte de Shadow Project.</p>
-                </section>
+    </div>
+    <div class="container">
+        <div class="row center-xs">
+            <section class="col-xs-12 col-sm-6 col-md-4 items">
+                <a href="{% url 'Devs' %}">
+                    <h4 class="colorLetras">¿Quienes Somos?</h4>
+                </a>
+                <p class="pQuien">Descubre todo lo relacionado con el Equipo de Desarrollo, detrás de Shadow Project.</p>
+            </section>
+            <section class="col-xs-12 col-sm-6 col-md-4 items">
+                <a href="{% url 'Juego' %}">
+                    <h4>El Juego</h4>
+                </a>
+                <p class="pQuien">Para redimir el mundo, es necesario conocer la Oscuridad que ha condenado a las tierras de Eridus al cataclismo. Incursiona en la Historia y sus Personajes.</p>
+            </section>
+            <section class="col-xs-12 col-sm-6 col-md-4 items">
+                <a href="{% url 'Desarrollo' %}">
+                    <h4>Desarrollo del Proyecto</h4>
+                </a>
+                <p class="pQuien">Da un vistazo breve al motor grafico usado para el desarrollo, así como a nuestra sección de arte de Shadow Project.</p>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+        <footer class="col-xs-12 center-xs">
+            <p id="redes">Redes Sociales</p>
+            <br>
+            <div>
+                <a href="https://www.facebook.com/ShadowProjectOficial/" target="_blank"><span class="icon-facebook"></span></a>
+                <a href="https://www.instagram.com/sh_path_of_redemption/" target="_blank"><span class="icon-instagram"></span></a>
+                <a href="https://www.youtube.com/channel/UCC3KLun16zLqYWjDR76q-7w" target="_blank"><span class="icon-youtube"></span></a>
             </div>
-        </div>
-        <div class="row">
-            <footer class="col-xs-12 center-xs">
-                <p id="redes">Redes Sociales</p>
-                <br>
-                <div>
-                    <a href="https://www.facebook.com/ShadowProjectOficial/" target="_blank"><span class="icon-facebook"></span></a>
-                    <a href="https://www.instagram.com/sh_path_of_redemption/" target="_blank"><span class="icon-instagram"></span></a>
-                    <a href="https://www.youtube.com/channel/UCC3KLun16zLqYWjDR76q-7w" target="_blank"><span class="icon-youtube"></span></a>
-                </div>
-                <hr>
-                <span class="col-xs-12 cursive">Contactenos a [sp.pathofredemption@gmail.com]</span>
-                <br>
-                <br>
-            </footer>
-        </div>
+            <hr>
+            <span class="col-xs-12 cursive">Contactenos a [sp.pathofredemption@gmail.com]</span>
+            <br>
+            <br>
+        </footer>
+    </div>
 </body>
 
 </html>
