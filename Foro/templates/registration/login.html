@@ -1,0 +1,68 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio se Sesión</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'fonts/iconos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flexboxgrid.min.css' %}">
+</head>
+
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="container">
+            <div class="row center-xs">
+                <div class="col-xs">
+                    <h1 id="titulo">Inicio de Sesión</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row center-xs">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="username" class="nombre">Nombre de Usuario:</label>
+                    <input type="text" class="form-control" name="username">
+                </div>
+            </div>
+        </div>
+        <div class="row center-xs">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="username" class="contraseña">Contraseña:</label>
+                    <input type="password" class="form-control" name="password">
+                </div>
+            </div>
+        </div>
+        <div class="row center-xs">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <a href="#" class="olvido">Olvide mi contraseña</a>
+                    <br>
+                    <br>
+                    <input type="submit" id="boton" class="btn btn-default btn-lg" name="boton" value="Ingresar">
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <footer class="col-xs-12 center-xs">
+            <p id="redes">Redes Sociales</p>
+            <div>
+                <a href="https://www.facebook.com/ShadowProjectOficial/" target="_blank"><span class="icon-facebook"></span></a>
+                <a href="https://www.instagram.com/sh_path_of_redemption/" target="_blank"><span class="icon-instagram"></span></a>
+                <a href="https://www.youtube.com/channel/UCC3KLun16zLqYWjDR76q-7w" target="_blank"><span class="icon-youtube"></span></a>
+            </div>
+            <span class="col-xs-12 cursive">Contactenos a [sp.pathofredemption@gmail.com]</span>
+        </footer>
+    </div>
+
+</body>
+
+</html>

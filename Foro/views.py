@@ -16,8 +16,8 @@ def Registro(request):
 def Download(request):
     return render(request, 'Foro/Download.html', {}) 
 
-def Sesion(request):
-    return render(request, 'Foro/Sesion.html', {}) 
+def login(request):
+    return render(request, 'registration/login.html', {}) 
     
 def Devs(request):
     return render(request, 'Foro/Devs.html', {}) 
