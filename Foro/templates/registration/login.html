@@ -43,10 +43,11 @@
         <div class="row center-xs">
             <div class="col-md-6">
                 <div class="form-group">
-                    <a href="#" class="olvido">Olvide mi contraseña</a>
+                    <a href="{% url 'password_reset' %}">Olvide mi contraseña</a>
                     <br>
                     <br>
                     <input type="submit" id="boton" class="btn btn-default btn-lg" name="boton" value="Ingresar">
+                    <input type="button" id="boton" onclick="window.history.back()" class="btn btn-default btn-lg" name="boton" value="Cancelar">
                 </div>
             </div>
         </div>
