@@ -18,7 +18,19 @@ def Download(request):
 
 def login(request):
     return render(request, 'registration/login.html', {}) 
-    
+
+def password_reset_form(request):
+    return render(request, 'registration/password_reset_form.html', {})
+
+def password_reset_done(request):
+    return render(request, 'registration/password_reset_done.html', {})
+
+def password_reset_confirm(request):
+    return render(request, 'registration/password_reset_confirm.html', {})
+
+def password_reset_complete(request):
+    return render(request, 'registration/password_reset_complete.html', {})
+
 def Devs(request):
     return render(request, 'Foro/Devs.html', {}) 
 
