@@ -19,11 +19,6 @@ body {
     font-weight: bold;
 }
 
-.video {
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
 .items a {
     padding: 10px;
     font-size: 15px;
@@ -39,13 +34,6 @@ body {
     color: #000000;
 }
 
-.pQuien {
-    margin-top: 15px;
-    font-size: 15px;
-    color: #fff;
-    text-align: justify;
-    font-family: 'Cinzel', serif;
-}
 
 footer {
     margin-top: 100px;

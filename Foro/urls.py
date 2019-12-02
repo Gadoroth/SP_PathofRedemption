@@ -1,7 +1,14 @@
 from django.urls import path, include, re_path
+#api
+from django.conf.urls import url, include
+from rest_framework import routers
+from Foro.quickstart import views
+router = routers.DefaultRouter()
+router.register(r'users', views.UserViewSet)
+router.register(r'groups', views.GroupViewSet)
+#---fin api
 from . import views
 from django.contrib.auth.views import LoginView, PasswordResetView, PasswordResetDoneView, PasswordResetConfirmView, PasswordResetCompleteView
-
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -26,20 +33,8 @@ urlpatterns = [
     path('post/<int:pk>/', views.post_detail, name='post_detail'),
     path('post/new', views.post_new, name='post_new'),
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
-]
-
-from django.conf.urls import url, include
-from rest_framework import routers
-from Foro.quickstart import views
- 
-router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'groups', views.GroupViewSet)
-
- 
-# Wire up our API using automatic URL routing.
-# Additionally, we include login URLs for the browsable API.
-urlpatterns = [
-    url(r'^', include(router.urls)),
+    #api
+    url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    #---fin api
 ]
